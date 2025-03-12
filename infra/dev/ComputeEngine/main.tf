@@ -32,19 +32,3 @@ module "google_compute_instance" {
   ]
 
 }
-# data "google_compute_instance" "default" {
-#   project      = "curso-terraform-tonny" # Replace with your project ID. If the project is setted in your provider, you can remove this property.
-#   zone         = "us-central1-b" # The zone where your instance is deployed.
-#   name         = "instance-springdockops2" # The name of your compute instance.
-# }
-
-# output "instance_internal_ip_data" {
-#   value       = data.google_compute_instance.default.network_interface.0.network_ip
-#   description = "The internal IP address of the instance retrieved via data source."
-# }
-
-# output "instance_external_ip_data" {
-#   value       = data.google_compute_instance.default.network_interface.0.access_config.0.nat_ip
-#   description = "The external IP address of the instance retrieved via data source."
-# }
-
